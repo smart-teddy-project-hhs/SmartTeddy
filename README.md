@@ -14,7 +14,7 @@ The hardware for the basket contains an Arduino Uno microcontroller reads sensor
 
 Sensors for the microcontroller light, gas, motion, speech, and camera.
 
-* Light Dependent Resisto r(LDR) - Light sensor
+* Light Dependent Resistor (LDR) - Light sensor
 * Carbon Monoxide, Coal Gas, Liqiefied Gas meter (MQ9) - Gas sensor
 * Grove - Speech Recognizer
 * PIR - Motion sensor
