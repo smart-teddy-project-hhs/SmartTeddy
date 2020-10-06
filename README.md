@@ -6,11 +6,20 @@ For motoring the SwD microcontrollers were first choice of implementation, becau
 
 Additional information technologies, launching methods, the Smart Teddy project can be found in the README.
 
+## Installation
+
+Basket - Open a terminal, git clone, pip install requirements.txt, then django is launchable.
+
+
+## Launching methods
+
+Basket - change directory to the basket folder and for development: `python manage.py runserver` or for production `python manage.py check --deploy`
+
 ## Hardware and software libraries
 
 ### Basket
 
-The hardware for the basket contains an Arduino Uno microcontroller reads sensors and the Asus PN-50 mini pc runs an Python application for sending sending messages and communicates data inside the SwD home.
+The hardware for the basket contains an *Arduino Uno* microcontroller reads sensors and the *Asus Mini PC PN-50* runs an Python application for sending sending messages and communicates data inside the SwD home.
 
 Sensors for the microcontroller light, gas, motion, speech, and camera.
 
@@ -21,4 +30,8 @@ Sensors for the microcontroller light, gas, motion, speech, and camera.
 
 Software of the following technologies are used.
 
-* Bleak - Bluetooth library for Generic Attribute Profile (GATT) communication
+* [Django](https://www.djangoproject.com/) - Python webframework for creating a Website or Application Programming Interface (API)
+
+// * [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
+
+// [Flake8](https://flake8.pycqa.org/en/latest/) - Style correction guide for python
