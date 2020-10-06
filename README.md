@@ -1,6 +1,6 @@
 # Smart Teddy
 
-With the intention of the Smart Teddy we want to take away worries of caregivers for Seniors with Dementia (SwD). Examples of caregivers are family members or medical staff that provide care to the SwD. Because by monitoring the safety of a SwD, they can live home longer without residing in a care home. In order to monitor the person of age we provided a Smart Teddybear and basket.
+With the intention of the Smart Teddy we want to take away worries of caregivers for Seniors with Dementia (SwD). Examples of caregivers are family members or medical staff that provide care to the SwD. Because by monitoring the safety of a SwD, they can live home longer without residing in a care home. In order to monitor the person of age we provided a Smart Teddy and basket.
 
 For monotoring the SwD microcontrollers were first choice of implementation, because the provide easy access to low-level motoring sensors. The Smart Teddy and basket both have a microcontoller to have two monitoring points for extra validity. The basket reads the microcontroller basket via a Personal Computer (PC)
 
@@ -24,12 +24,12 @@ The hardware for the basket contains an *Arduino Uno* microcontroller reads sens
 Sensors for the microcontroller light, gas, motion, speech, and camera.
 
 * Light Dependent Resistor (LDR) - Light sensor
-* Carbon Monoxide, Coal Gas, Liqiefied Gas meter (MQ9) - Gas sensor
+* Carbon Monoxide, Coal Gas, Liquified Gas meter (MQ9) - Gas sensor
 * Grove - Speech Recognizer
 * PIR - Motion sensor
 
 Software of the following technologies are used.
 
-* [Django](https://www.djangoproject.com/) - Python webframework for creating a Website or Application Programming Interface (API)
+* [Django](https://www.djangoproject.com/) - Python web-framework for creating a Website or Application Programming Interface (API)
 
 * [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
