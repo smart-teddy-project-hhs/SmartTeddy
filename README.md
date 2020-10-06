@@ -33,3 +33,5 @@ Software of the following technologies are used.
 * [Django](https://www.djangoproject.com/) - Python web-framework for creating a Website or Application Programming Interface (API)
 
 * [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
+
+* [Wagtail-Flags](https://github.com/cfpb/wagtail-flags) - A feature toggling program for which is intergrated in the Django Admin Panel.
