@@ -32,6 +32,4 @@ Software of the following technologies are used.
 
 * [Django](https://www.djangoproject.com/) - Python webframework for creating a Website or Application Programming Interface (API)
 
-// * [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
-
-// [Flake8](https://flake8.pycqa.org/en/latest/) - Style correction guide for python
+* [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
