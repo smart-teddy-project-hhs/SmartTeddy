@@ -18,7 +18,7 @@ Basket computer - change directory to the basket folder and for development: `py
 
 ## Hardware and software libraries
 
-## Basket
+### Basket
 
 The hardware for the basket contains an *Arduino Uno* microcontroller reads sensors and the *Asus Mini PC PN-50* runs an Python application for sending sending messages and communicates data inside the SwD home.
 
