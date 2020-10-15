@@ -130,3 +130,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+smartteddy.basket.computer/Pipfile.lock
+
+pythonProject/.idea/
