@@ -12,10 +12,12 @@ SENTIMENT_POLARITY_CHOICES = [
 ADJECTIVE = 'ADJE'
 NOUN = 'NOUN'
 VERB = 'VERB'
+OTHER = 'OTHE'
 PART_OF_SPEECH_CHOICES = [
-    (ADJECTIVE, 'ADJE'),
-    (NOUN, 'NOUN'),
-    (VERB, 'VERB'),
+    (ADJECTIVE, 'adjective'),
+    (NOUN, 'noun'),
+    (VERB, 'verb'),
+    (OTHER, 'other'),
 ]
 
 
@@ -31,7 +33,7 @@ class SentimentLemma(models.Model):
     part_of_speech = models.CharField(
         max_length=4,
         choices=PART_OF_SPEECH_CHOICES,
-        default=VERB
+        default=OTHER
     )
 
     def __str__(self):
