@@ -105,7 +105,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+smartteddy.basket.computer/web/smartteddydashboard/smartteddydashboard/.env
 .venv
 env/
 venv/
@@ -136,3 +136,4 @@ smartteddy.basket.computer/Pipfile.lock
 pythonProject/.idea/
 
 smartteddy.basket.computer/.idea/
+/smartteddy.basket.computer/services/speech_recognition/language_models_smartteddy/

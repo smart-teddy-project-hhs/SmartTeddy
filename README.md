@@ -39,4 +39,8 @@ Software of the following technologies are used for the basket computer.
 
 * [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
 
-* [Wagtail-Flags](https://github.com/cfpb/wagtail-flags) - A feature toggling program for which is intergrated in the Django Admin Panel.
+* [Wagtail-Flags](https://github.com/cfpb/wagtail-flags) - A feature toggling program for which is intergrated in the Django Admin Panel
+
+* [Vosk API](https://alphacephei.com/vosk/) - A lightweight successor on the open source [CMU-Sphinx](https://cmusphinx.github.io/) speech recognition project 
+
+* [Kaldi NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) - Open source medium weight (1,7 GB) speech recognition model from [Stichting Open Spraaktechnologie](https://openspraaktechnologie.org/download/) by teachers from the Universiteit Twente, Dutch Instituut voor Beeld en Geluid, and Radboud Universiteit Nijmegen. The download for the Vosk model can be found at [Kaldi Dutch model Vosk](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) from [Vosk models][https://alphacephei.com/vosk/models]
