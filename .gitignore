@@ -136,4 +136,4 @@ smartteddy.basket.computer/Pipfile.lock
 pythonProject/.idea/
 
 smartteddy.basket.computer/.idea/
-/smartteddy.basket.computer/services/speech_recognition/language_models_smartteddy/
+/smartteddy.basket.computer/service/speech_recognition/language_models_smartteddy/
