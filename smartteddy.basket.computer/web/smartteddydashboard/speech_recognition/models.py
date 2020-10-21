@@ -41,10 +41,8 @@ class SentimentLemma(models.Model):
 
 
 class LemmaCounter(models.Model):
-    sentiment_lemma = models.ForeignKey(
-        SentimentLemma,
-        on_delete=models.DO_NOTHING
-    )
+    # TODO create link (foreign key) for filtering a group of sentiment lemma's and recognized lemma's.
+    word_lemma = models.CharField(max_length=100, default='<ukn>')
     date_said = models.DateTimeField('Date said on')
 
     def was_said_recently(self):
