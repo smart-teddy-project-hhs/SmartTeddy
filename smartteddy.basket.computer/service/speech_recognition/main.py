@@ -2,18 +2,19 @@
 
 from vosk import Model, KaldiRecognizer
 import os
-
-voicemodel = "medium_model_nl"
-
-if not os.path.exists(voicemodel):
-    print ("Please download the model from https://alphacephei.com/vosk/models and unpack as 'model' in the current folder.")
-    exit (1)
-
 import pyaudio
 import requests
 import json
 
-model = Model(voicemodel)
+voice_model = "medium_model_nl"
+
+if not os.path.exists(voice_model):
+    print(
+        "Please download the model from https://alphacephei.com/vosk/models and unpack as 'model' in the current folder.")
+    exit(1)
+
+
+model = Model(voice_model)
 rec = KaldiRecognizer(model, 16000)
 
 p = pyaudio.PyAudio()
@@ -40,8 +41,3 @@ while True:
         print(rec.PartialResult())
 
 print(rec.FinalResult())
-
-
-
-
-
