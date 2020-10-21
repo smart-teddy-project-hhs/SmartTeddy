@@ -137,3 +137,6 @@ pythonProject/.idea/
 
 smartteddy.basket.computer/.idea/
 /smartteddy.basket.computer/service/speech_recognition/language_models_smartteddy/
+/smartteddy.basket.computer/service/large_model_us/
+/smartteddy.basket.computer/service/medium_model_nl/
+/smartteddy.basket.computer/service/small_model_nl/

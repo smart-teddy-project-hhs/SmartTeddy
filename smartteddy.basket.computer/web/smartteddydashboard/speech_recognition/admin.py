@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import SentimentLemma
+from .models import SentimentLemma, LemmaCounter
 
 
 class SentimentLemmaInline(admin.TabularInline):
@@ -17,3 +17,20 @@ class SentimentLemmaAdmin(admin.ModelAdmin):
 
 
 admin.site.register(SentimentLemma, SentimentLemmaAdmin)
+
+
+class LemmaCounterInline(admin.TabularInline):
+    model = LemmaCounter
+
+
+class LemmaCounterAdmin(admin.ModelAdmin):
+    model = LemmaCounter
+    fieldsets = [
+        (None, {'fields': ['word_lemma', 'date_said']}),
+    ]
+    list_display = ('word_lemma', 'date_said')
+    search_fields = ['word_lemma']
+    list_filter = ['date_said']
+
+
+admin.site.register(LemmaCounter, LemmaCounterAdmin)
