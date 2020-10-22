@@ -26,11 +26,12 @@ class LemmaCounterInline(admin.TabularInline):
 class LemmaCounterAdmin(admin.ModelAdmin):
     model = LemmaCounter
     fieldsets = [
-        (None, {'fields': ['word_lemma', 'date_said']}),
+        (None, {'fields': ['word_lemma', 'date_said', 'week_number_said']}),
     ]
-    list_display = ('word_lemma', 'date_said')
+    list_display = ('word_lemma', 'date_said', 'week_number_said')
     search_fields = ['word_lemma']
     list_filter = ['date_said']
+    orderning = ['-date_said']
 
 
 admin.site.register(LemmaCounter, LemmaCounterAdmin)

@@ -33,7 +33,8 @@ while True:
             headers=request_header
         )
         print('requests status code: {0}'.format(r.status_code))
-        # TODO get result when involving special characters
+        # TODO Setup a stream, so that there is less overhead of starting new connections
+        # TODO Get result when involving special characters
         print("begin result")
         print(rec.Result())
         print("end result")

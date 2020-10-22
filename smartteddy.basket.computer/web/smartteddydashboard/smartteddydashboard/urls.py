@@ -4,5 +4,5 @@ from django.urls import include, path
 
 urlpatterns = [
     path('', admin.site.urls),
-    path('speech-recognition/', include('speech_recognition.urls')),
+    path('speech-recognition/', include('speechrecognition.urls')),
 ]

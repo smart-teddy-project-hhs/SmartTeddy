@@ -1,5 +1,6 @@
 from pathlib import Path
 import environ
+
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
@@ -17,11 +18,10 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
-    'speech_recognition.apps.SpeechRecognitionConfig',
+    'speechrecognition.apps.SpeechrecognitionConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -64,9 +64,9 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        # TODO use something more restrictive, because allow any can be insecure.
+        # TODO Use a more restrictive permission, because allow any can be insecure.
         'rest_framework.permissions.AllowAny',
-        #'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ],
     'DEFAULT_PARSER_CLASSES': [
         'rest_framework.parsers.JSONParser',
@@ -74,7 +74,6 @@ REST_FRAMEWORK = {
 }
 
 WSGI_APPLICATION = 'smartteddydashboard.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -85,7 +84,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -105,7 +103,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -119,13 +116,15 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
 
-# Feature toggles
+# Feature toggles that are pre-defined
+# Django-flags https://cfpb.github.io/django-flags/
 FLAGS = {
-    'MY_FLAG': []
+    'FLAG_WITH_EMPTY_CONDITIONS': [],
+    'FLAG_WITH_ANY_CONDITIONS': [],
+    'FLAG_WITH_REQUIRED_CONDITIONS': [],
 }
