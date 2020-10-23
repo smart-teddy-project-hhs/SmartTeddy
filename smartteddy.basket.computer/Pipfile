@@ -5,6 +5,8 @@ verify_ssl = true
 
 [dev-packages]
 pytest-django="*"
+pytest-cov="*"
+coverage = "*"
 
 [packages]
 asgiref = "3.3.0"
@@ -17,6 +19,8 @@ djangorestframework = "3.12.1"
 markdown = "3.3.2"
 django-filter = "2.4.0"
 django-flags = "5.0.1"
+pytest-django = "*"
+
 
 [requires]
 python_version = "3.8"

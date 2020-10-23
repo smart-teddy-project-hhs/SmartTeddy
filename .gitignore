@@ -136,7 +136,9 @@ smartteddy.basket.computer/Pipfile.lock
 pythonProject/.idea/
 
 smartteddy.basket.computer/.idea/
-/smartteddy.basket.computer/service/speech_recognition/language_models_smartteddy/
-/smartteddy.basket.computer/service/speech_recognition/large_model_us/
-/smartteddy.basket.computer/service/speech_recognition/medium_model_nl/
-/smartteddy.basket.computer/service/speech_recognition/small_model_nl/
+/smartteddy.basket.computer/service/speechrecognition/language_models_smartteddy/
+/smartteddy.basket.computer/service/speechrecognition/large_model_us/
+/smartteddy.basket.computer/service/speechrecognition/medium_model_nl/
+/smartteddy.basket.computer/service/speechrecognition/small_model_nl/
+
+Pipfile.lock
