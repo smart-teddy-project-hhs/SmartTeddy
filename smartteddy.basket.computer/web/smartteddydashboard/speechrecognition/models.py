@@ -5,7 +5,6 @@ from datetime import date
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
-
 POSITIVE = 'POS'
 NEGATIVE = 'NEG'
 SENTIMENT_POLARITY_CHOICES = [
@@ -39,12 +38,16 @@ class SentimentLemma(models.Model):
         default=OTHER
     )
 
+    @property
+    def is_positive(self):
+        return True if self.sentiment_polarity == POSITIVE else False
+
     def __str__(self):
         return f'{self.lemma_written_form} has a {self.sentiment_polarity} sentiment'
 
 
 def validate_week_number(value):
-    if value > 52:
+    if value > 53:
         raise ValidationError(_('%(value)s is higher than week number 52'), params={'value': value})
     elif value < 1:
         raise ValidationError(_('%(value)s is lower than week number 1'), params={'value': value})
@@ -60,12 +63,20 @@ class LemmaCounter(models.Model):
         validators=[validate_week_number]
     )
 
-    def was_said_recently(self):
+    sentiment_lemma = models.ForeignKey(
+        SentimentLemma,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+    )
+
+    def was_said_last_week(self):
         now = timezone.now()
         return now - datetime.timedelta(days=7) <= self.date_said <= now
-    was_said_recently.boolean = True
-    was_said_recently.admin_order_field = 'date_said'
-    was_said_recently.short_description = 'Said last week'
+
+    was_said_last_week.boolean = True
+    was_said_last_week.admin_order_field = 'date_said'
+    was_said_last_week.short_description = 'Said last week'
 
     def __dir__(self):
         return f'{self.sentiment_lemma} is said on {self.date_said}'

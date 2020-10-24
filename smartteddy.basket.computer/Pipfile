@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 pytest-django="*"
 pytest-cov="*"
-coverage = "*"
 
 [packages]
 asgiref = "3.3.0"
