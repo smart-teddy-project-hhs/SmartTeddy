@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import SentimentLemma, LemmaCounter
+from .models import SentimentLemma, SaidLemma
 
 
 class SentimentLemmaInline(admin.TabularInline):
@@ -19,13 +19,13 @@ admin.site.register(SentimentLemma, SentimentLemmaAdmin)
 
 
 class LemmaCounterInline(admin.TabularInline):
-    model = LemmaCounter
+    model = SaidLemma
 
 
 class LemmaCounterAdmin(admin.ModelAdmin):
-    model = LemmaCounter
+    model = SaidLemma
     fieldsets = [
-        (None, {'fields': ['word_lemma', 'date_said', 'week_number_said']}),
+        (None, {'fields': ['word_lemma', 'date_said']}),
     ]
     list_display = ('word_lemma', 'date_said', 'week_number_said')
     search_fields = ['word_lemma']
@@ -33,4 +33,4 @@ class LemmaCounterAdmin(admin.ModelAdmin):
     orderning = ['-date_said']
 
 
-admin.site.register(LemmaCounter, LemmaCounterAdmin)
+admin.site.register(SaidLemma, LemmaCounterAdmin)

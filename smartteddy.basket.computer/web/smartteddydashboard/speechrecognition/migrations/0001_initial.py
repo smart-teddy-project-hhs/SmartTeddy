@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('id', models.PositiveBigIntegerField(primary_key=True, serialize=False)),
                 ('word_lemma', models.CharField(default='<ukn>', max_length=100)),
                 ('date_said', models.DateTimeField(verbose_name='Date said on')),
-                ('week_number_said', models.PositiveSmallIntegerField(default=43, validators=[speechrecognition.models.validate_week_number])),
+                ('week_number_said', models.PositiveSmallIntegerField(default=43)),
             ],
         ),
         migrations.CreateModel(
