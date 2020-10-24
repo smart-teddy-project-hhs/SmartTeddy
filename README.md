@@ -51,7 +51,7 @@ Software of the following technologies are used for the basket computer.
 
 Please read [CONTIBUTING.md](https://github.com/hwpvanholsteijn/Smartteddy/blob/master/CONTRIBUTING.md) in the root of the repository and contribute by adding your own services.
 
-For additional support look in the wiki's on github and additional architectural documentation can be found 
+For additional support look in the wiki's on github and additional architectural documentation can asked from the contibutors in the section contact. 
 
 ### Code of Conduct
 
