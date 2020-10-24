@@ -41,7 +41,7 @@ Software of the following technologies are used for the basket computer.
 
 * [Vosk API](https://alphacephei.com/vosk/) - A lightweight successor on the open source [CMU-Sphinx](https://cmusphinx.github.io/) speech recognition project 
 
-* [Kaldi NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) - Open source medium weight (1,7 GB) speech recognition model from [Stichting Open Spraaktechnologie](https://openspraaktechnologie.org/download/) by teachers from the Universiteit Twente, Dutch Instituut voor Beeld en Geluid, and Radboud Universiteit Nijmegen. The download for the Vosk model can be found at [Kaldi Dutch model Vosk](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) from [Vosk models][https://alphacephei.com/vosk/models]
+* [Kaldi NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) - Open source medium weight (1,7 GB) speech recognition model from [Stichting Open Spraaktechnologie](https://openspraaktechnologie.org/download/) by teachers from the Universiteit Twente, Dutch Instituut voor Beeld en Geluid, and Radboud Universiteit Nijmegen. The download for the Vosk model can be found at [Kaldi Dutch model Vosk](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) from [Vosk models](https://alphacephei.com/vosk/models)
 
 * [VU-sentiment-lexicon](https://github.com/opener-project/VU-sentiment-lexicon) - [Dutch Lexicon](https://github.com/opener-project/VU-sentiment-lexicon/tree/master/VUSentimentLexicon/NL-lexicon) with values of sentiment combined with a word, which is a project from the Vrije Universtieit Amsterdam from the year 2016.
 
