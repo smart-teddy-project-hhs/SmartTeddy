@@ -39,4 +39,37 @@ Software of the following technologies are used for the basket computer.
 
 * [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
 
-* [Wagtail-Flags](https://github.com/cfpb/wagtail-flags) - A feature toggling program for which is intergrated in the Django Admin Panel.
+* [Vosk API](https://alphacephei.com/vosk/) - A lightweight successor on the open source [CMU-Sphinx](https://cmusphinx.github.io/) speech recognition project 
+
+* [Kaldi NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) - Open source medium weight (1,7 GB) speech recognition model from [Stichting Open Spraaktechnologie](https://openspraaktechnologie.org/download/) by teachers from the Universiteit Twente, Dutch Instituut voor Beeld en Geluid, and Radboud Universiteit Nijmegen. The download for the Vosk model can be found at [Kaldi Dutch model Vosk](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) from [Vosk models](https://alphacephei.com/vosk/models)
+
+* [VU-sentiment-lexicon](https://github.com/opener-project/VU-sentiment-lexicon) - [Dutch Lexicon](https://github.com/opener-project/VU-sentiment-lexicon/tree/master/VUSentimentLexicon/NL-lexicon) with values of sentiment combined with a word, which is a project from the Vrije Universtieit Amsterdam from the year 2016.
+
+* [Django-pytest](https://pytest-django.readthedocs.io/) - A test framework based on [Pytest](https://docs.pytest.org/) a Python test framework supports easiness. Besides it has a plugin for our favorite IDE Pycharm.
+
+## Contributing 
+
+Please read [CONTIBUTING.md](https://github.com/hwpvanholsteijn/Smartteddy/blob/master/CONTRIBUTING.md) in the root of the repository and contribute by adding your own services.
+
+For additional support look in the wiki's on github and additional architectural documentation can asked from the contibutors in the section contact. 
+
+### Code of Conduct
+
+When contributing to the Smart Teddy project the rules for the [CODE_OF_CONDUCT.md](https://github.com/hwpvanholsteijn/Smartteddy/blob/master/CODE_OF_CONDUCT.md) apply. These are social rules in order to manage the contribution of the project.
+
+## Contact 
+
+Please feel free to send an e-mail in case of the Smart Teddy project, when documentation is insufficient.
+
+[Huub van Holsteijn](mailto:h.w.p.vanholsteijn@student.hhs.nl]) - hwpvanholsteijn
+
+[Szymon Jasinski](mailto:s.jasinski@student.hhs.nl) - polskaszym
+
+[Jeoffrey Oostrom](mailto:j.s.oostrom@student.hhs.nl) - Jeoffrey-Oostrom
+
+## License
+
+Smart Teddy uses the [MIT License](https://mit-license.org/) which means that authors or copyright holders in no event shall be liable for any claim, damages or other liability, whether in an action of contract.
+
+**Besides this we like to ask you to fork the project in case of reuse, so that we can see future progress on our project.** 😉
+ 
