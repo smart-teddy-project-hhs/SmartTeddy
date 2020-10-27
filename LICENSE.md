@@ -1,6 +1,12 @@
 MIT License
 
-Copyright (c) 2020 Smart Teddy Project
+Smart Teddy Project - The Hague University of Applied Sciences
+
+Copyright (c) 2020 Huub van Holsteijn
+
+Copyright (c) 2020 Szymon Jasiński
+
+Copyright (c) 2020 Jeoffrey Oostrom 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
