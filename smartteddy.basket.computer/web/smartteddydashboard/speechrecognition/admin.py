@@ -2,11 +2,8 @@ from django.contrib import admin
 from .models import SentimentLemma, SaidLemma
 
 
-class SentimentLemmaInline(admin.TabularInline):
-    model = SentimentLemma
-
-
 class SentimentLemmaAdmin(admin.ModelAdmin):
+    model = SentimentLemma
     fieldsets = [
         (None, {'fields': ['lemma_written_form', 'sentiment_polarity', 'part_of_speech']}),
     ]
@@ -18,19 +15,15 @@ class SentimentLemmaAdmin(admin.ModelAdmin):
 admin.site.register(SentimentLemma, SentimentLemmaAdmin)
 
 
-class LemmaCounterInline(admin.TabularInline):
-    model = SaidLemma
-
-
-class LemmaCounterAdmin(admin.ModelAdmin):
+class SaidLemmaAdmin(admin.ModelAdmin):
     model = SaidLemma
     fieldsets = [
         (None, {'fields': ['word_lemma', 'date_said']}),
     ]
-    list_display = ('word_lemma', 'date_said', 'week_number_said')
+    list_display = ('word_lemma', 'date_said', 'week_number_said', 'sentiment')
     search_fields = ['word_lemma']
     list_filter = ['date_said']
     orderning = ['-date_said']
 
 
-admin.site.register(SaidLemma, LemmaCounterAdmin)
+admin.site.register(SaidLemma, SaidLemmaAdmin)
