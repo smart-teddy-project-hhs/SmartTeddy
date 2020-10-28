@@ -41,7 +41,9 @@ class SentimentLemma(models.Model):
         return True if self.sentiment_polarity == POSITIVE else False
 
     def __str__(self):
-        return f'{self.lemma_written_form} has a {self.sentiment_polarity} sentiment'
+        # TODO add to admin instead of __str__ method
+        # return f'{self.lemma_written_form} has a {self.sentiment_polarity} sentiment'
+        return self.sentiment_polarity
 
 
 class SaidLemma(models.Model):
