@@ -69,7 +69,7 @@ Please feel free to send an e-mail in case of the Smart Teddy project, when docu
 
 ## License
 
-Smart Teddy uses the [MIT License](https://mit-license.org/) which means that authors or copyright holders in no event shall be liable for any claim, damages or other liability, whether in an action of contract.
+Smart Teddy uses the [MIT License](https://mit-license.org/) which means that authors or copyright holders in no event shall be liable for any claim, damages or other liability, whether in an action of contract. **However in MIT means that a NOTICE of the copyright owners is required.**
 
-**Besides this we like to ask you to fork the project in case of reuse, so that we can see future progress on our project.** 😉
+_Besides this we like to ask you to fork the project in case of reuse, so that we can see future progress on our project._ 😉
  
