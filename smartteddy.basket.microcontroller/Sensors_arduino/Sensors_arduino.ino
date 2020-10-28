@@ -7,7 +7,7 @@
 bool motion;
 byte lumen; 
 int sound;
-int piezo; 
+int shock_wave; 
 float gas;
 
 unsigned long previousTime = 0;
@@ -51,11 +51,11 @@ void loop()
     motion = digitalRead(PIR_MOTION_SENSOR);
     lumen = analogRead(LIGHT_SENSOR);
     sound = analogRead(SOUND_SENSOR);    
-    piezo = analogRead(PIEZO_SENSOR);
+    shock_wave = analogRead(PIEZO_SENSOR);
     int sensorValue = analogRead(GAS_SENSOR);
     sensorV = (float)sensorValue/1024*5.0;
     gas = (5.0-sensorV)/sensorV;
     ratio = gas/calibratedGas;
-    Serial.println(String(lumen) +";"+ String(motion) +";"+ String(sound) +";"+ String(piezo)+";"+ String(gas)+";"+ String(ratio));
+    Serial.println(String(lumen) +";"+ String(motion) +";"+ String(sound) +";"+ String(shock_wave)+";"+ String(gas)+";"+ String(ratio));
   }
 }
