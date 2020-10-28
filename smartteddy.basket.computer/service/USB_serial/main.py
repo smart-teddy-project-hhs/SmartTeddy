@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
             if arduinoData:
                 print(arduinoData)
-                with open("test_data4.csv", "a") as f:
+                with open("/home/vftp/datascienceuser/arduino_data.csv", "a") as f:
                     writer = csv.writer(f, delimiter=';')
                     split = arduinoData.split(";")
                     split.append(date)
