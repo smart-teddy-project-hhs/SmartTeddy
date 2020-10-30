@@ -19,6 +19,9 @@ markdown = "3.3.2"
 django-filter = "2.4.0"
 django-flags = "5.0.1"
 pytest-django = "*"
+twilio = "*"
+environ="*"
+pyserial="*"
 
 
 [requires]
