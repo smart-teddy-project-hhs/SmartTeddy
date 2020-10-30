@@ -21,6 +21,7 @@ django-flags = "5.0.1"
 pytest-django = "*"
 twilio = "*"
 environ="*"
+pyserial="*"
 
 
 [requires]

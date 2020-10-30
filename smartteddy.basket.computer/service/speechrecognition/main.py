@@ -6,7 +6,7 @@ import pyaudio
 import requests
 import json
 
-voice_model = "medium_model_nl"
+voice_model = "small_model_nl"
 
 if not os.path.exists(voice_model):
     print(
