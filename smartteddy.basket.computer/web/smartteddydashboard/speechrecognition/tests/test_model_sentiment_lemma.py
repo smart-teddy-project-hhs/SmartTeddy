@@ -10,7 +10,7 @@ def create_sentiment_lemma(lemma, is_positive=False):
     return sentiment_lemma
 
 
-class TestSentimentLemma:
+class TestModelSentimentLemma:
 
     def test_sentiment_lemma_is_postive(self):
         positive_lemma = create_sentiment_lemma(lemma="goed", is_positive=True)

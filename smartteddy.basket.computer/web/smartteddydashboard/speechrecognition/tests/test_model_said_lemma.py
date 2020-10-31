@@ -4,7 +4,7 @@ import datetime
 from speechrecognition.models import SaidLemma
 
 
-class TestLemmaCounter:
+class TestModelSaidLemma:
 
     def test_lemma_was_recently_said_with_equal_date(self):
         time = timezone.now() - datetime.timedelta(days=7)
