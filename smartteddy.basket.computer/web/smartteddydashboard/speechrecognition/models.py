@@ -60,13 +60,20 @@ class SaidLemma(models.Model):
         null=True,
     )
 
-    def was_said_last_week(self):
+    def is_said_last_week(self):
         now = timezone.now()
         return now - datetime.timedelta(days=7) <= self.date_said <= now
 
-    was_said_last_week.boolean = True
-    was_said_last_week.admin_order_field = 'date_said'
-    was_said_last_week.short_description = 'Said last week'
+    def is_passed_last_(self):
+        now = timezone.now()
+        return now - datetime.timedelta(days=7) <= self.date_said <= now
+
+    def word_sentiment(self):
+        return SentimentLemma.objects.filter(id=1)
+
+    is_said_last_week.boolean = True
+    is_said_last_week.admin_order_field = 'date_said'
+    is_said_last_week.short_description = 'Said last week'
 
     def save(self, *args, **kwargs):
         # TODO find a less heuristic for sentiment
