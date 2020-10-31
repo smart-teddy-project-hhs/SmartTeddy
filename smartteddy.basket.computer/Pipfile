@@ -19,7 +19,16 @@ markdown = "3.3.2"
 django-filter = "2.4.0"
 django-flags = "5.0.1"
 pytest-django = "*"
-
+dlib = "*"
+environ = "*"
+keras = "*"
+face-recognition = "*"
+cvlib = "*"
+matplotlib = "*"
+tensorflow = "*"
+imageai = "*"
+opencv-python = "*"
+serial = "*"
 
 [requires]
 python_version = "3.8"
