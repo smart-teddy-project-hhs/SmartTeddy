@@ -142,3 +142,5 @@ smartteddy.basket.computer/.idea/
 /smartteddy.basket.computer/service/speechrecognition/small_model_nl/
 
 Pipfile.lock
+
+smartteddy.basket.computer/service/direct_message/.env

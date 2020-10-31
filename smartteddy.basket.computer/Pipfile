@@ -26,9 +26,11 @@ face-recognition = "*"
 cvlib = "*"
 matplotlib = "*"
 tensorflow = "*"
-imageai = "*"
 opencv-python = "*"
 serial = "*"
+twilio = "*"
+environ="*"
+pyserial="*"
 
 [requires]
 python_version = "3.8"
