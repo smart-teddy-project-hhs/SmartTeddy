@@ -33,6 +33,8 @@ environ="*"
 pyserial="*"
 csv="*"
 Pillow="*"
+twilio="*"
+pipenv="*"
 
 [requires]
 python_version = "3.8"
