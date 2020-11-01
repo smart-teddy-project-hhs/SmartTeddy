@@ -51,6 +51,7 @@ def saveFeatures(frame, name):
             pil_image.save(file_name, 'JPEG')
 
 def main(camera):
+    print('in face')
     # global variables
     global video_capture
     global jeoffrey_face_encoding

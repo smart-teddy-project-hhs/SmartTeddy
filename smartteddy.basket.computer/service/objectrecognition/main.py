@@ -42,10 +42,8 @@ def perFrame(labels):
     global starting_second
     global total_output_count
     global average_output_count
-    global total_frame_count
 
     current_second = datetime.now().strftime('%d-%m-%Y %H:%M:%S')
-    total_frame_count += 1
 
     for item in labels:
         if item == 'wine_glass':
@@ -77,6 +75,7 @@ def perFrame(labels):
 
 
 def main(camera):
+    print('in object')
     # global variable
     global start_minute
     global frames_with_objects
@@ -109,6 +108,7 @@ def main(camera):
         small_frame = cv2.resize(frame, (0, 0), fx=1, fy=1)
 
         if process_this_frame:
+            total_frame_count += 1
             bbox, label, conf = cv.detect_common_objects(small_frame, confidence=0.25, model='yolov3-tiny')
             if 'wine_glass' in label or 'cup' in label or 'bowl' in label or 'bottle' in label or 'spoon' in label or 'knife' in label or 'fork' in label:
                 perFrame(label)
