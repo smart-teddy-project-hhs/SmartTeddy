@@ -65,7 +65,7 @@ class TestViewSpeechRecognition:
         )
         assert response.status_code == 400
 
-    def test_raises_400_when_result_is_missing_word(self):
+    def test_raises_200_when_result_is_missing_word(self):
         http_client = Client()
         response = http_client.post(
             path='/speech-recognition/sentence',
@@ -74,7 +74,7 @@ class TestViewSpeechRecognition:
         )
         assert response.status_code == 200
 
-    def test_raises_http_400_when_nothing_said(self):
+    def test_raises_http_400_when_word_is_missing_from_result(self):
         http_client = Client()
         response = http_client.post(
             path='/speech-recognition/sentence',

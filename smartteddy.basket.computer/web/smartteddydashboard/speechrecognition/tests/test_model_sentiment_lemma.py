@@ -19,3 +19,7 @@ class TestModelSentimentLemma:
     def test_sentiment_lemma_is_negative(self):
         positive_lemma = create_sentiment_lemma(lemma="slecht", is_positive=False)
         assert positive_lemma.is_positive is False
+
+    def test_sentiment_lemma_is_negative_wben_none(self):
+        positive_lemma = create_sentiment_lemma(lemma="slecht", is_positive=None)
+        assert positive_lemma.is_positive is False
