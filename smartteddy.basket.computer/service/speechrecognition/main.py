@@ -6,11 +6,11 @@ import pyaudio
 import requests
 import json
 
-voice_model = "small_model_nl"
+voice_model = "medium_model_nl"
 
 if not os.path.exists(voice_model):
     print(
-        "Please download the model from https://alphacephei.com/vosk/models and unpack as 'model' in the current folder.")
+        f"Please download the model from https://alphacephei.com/vosk/models and unpack as {voice_model} in the current folder.")
     exit(1)
 
 
