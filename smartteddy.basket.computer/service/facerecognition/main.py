@@ -46,7 +46,7 @@ def saveFeatures(frame, name):
             for facial_feature in facial_features:
                 d.line(face_landmarks[facial_feature], width=5)
 
-            file_name = 'facerecognition/images/' + name + str(datetime.now().strftime('%d-%m-%Y %H_%M_%S')) + '.JPEG'
+            file_name = '/home/vftp/admin/facerecognition/images/' + name + str(datetime.now().strftime('%d-%m-%Y %H_%M_%S')) + '.JPEG'
             print(file_name, 'JPEG')
             pil_image.save(file_name, 'JPEG')
 
@@ -65,7 +65,7 @@ def main(camera):
     video_capture = camera
 
     # Load a sample picture and learn how to recognize it.
-    jeoffrey_image = face_recognition.load_image_file("facerecognition/jeoffrey.jpg")
+    jeoffrey_image = face_recognition.load_image_file("/home/vftp/admin/facerecognition/jeoffrey.jpg")
     jeoffrey_face_encoding = face_recognition.face_encodings(jeoffrey_image)[0]
 
     # Initialize some variables
