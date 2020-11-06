@@ -30,7 +30,7 @@ def perMinute():
 
     with open('objectrecognition/objects.csv', 'a', newline='') as csvfile:
         fieldnames = ['current_time', 'avg_wine_glass', 'avg_cup', 'avg_bowl',
-                      'avg_spoon', 'avg_knife', 'avg_fork']
+                      'avg_bottle', 'avg_spoon', 'avg_knife', 'avg_fork']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writerow({'current_time': current_time,
@@ -62,7 +62,7 @@ def perFrame(labels):
             total_output_count['fork'] += 1
 
     difference = datetime.strptime(current_second, '%d-%m-%Y %H:%M:%S') - datetime.strptime(starting_second, '%d-%m-%Y %H:%M:%S')
-    if difference.total_seconds() >= 60:
+    if difference.total_seconds() >= 2:
         average_output_count = {'wine_glass': total_output_count['wine_glass'] / total_frame_count,
                                 'cup': total_output_count['cup'] / total_frame_count,
                                 'bowl': total_output_count['bowl'] / total_frame_count,
