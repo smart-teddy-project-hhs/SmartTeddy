@@ -6,7 +6,7 @@ The Smart Teddy project has a (Smart) Teddy and basket which performing measurem
 
 Summery of how to install the Smart Teddy project and guidance on how to launch the Smart Teddy Project can be found in the README. However it is advised to read 'Developers manual' from which can asked from the owners named in the chapter 'Contacts'.
 
-**Technical Description**
+## Technical Description
 
 Smart Teddy is a Internet-of-Things (IoT) project which is an other name for a collection network-enabled devices, excluding traditional computers like laptops and servers. The Smart Teddy does not communicate with cloud services to increase security. However code-quality can be increased by cloud services. 
 
@@ -62,4 +62,6 @@ Please feel free to send an e-mail in case of the Smart Teddy project, when docu
 Smart Teddy uses the [MIT License](https://mit-license.org/) which means that authors or copyright holders in no event shall be liable for any claim, damages or other liability, whether in an action of contract. **However in MIT means that a NOTICE of the copyright owners is required.**
 
 _Besides this we like to ask you to fork the project in case of reuse, so that we can see future progress on our project._ 
+
+Smart Teddy is a project developed by [The Hague University of Applied Sciences](https://www.thehagueuniversity.com/) (HHS) collocation in Zoetermeer the Netherlands.
  
