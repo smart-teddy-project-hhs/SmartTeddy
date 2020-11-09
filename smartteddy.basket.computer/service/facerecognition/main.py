@@ -21,7 +21,6 @@ def saveFeatures(frame, name):
     global current_second
     difference = datetime.now() - datetime.strptime(current_second, '%d-%m-%Y %H:%M:%S')
     if (name != "Unknown") and difference.total_seconds() > 15:
-        print(current_second)
         current_second = datetime.now().strftime('%d-%m-%Y %H:%M:%S')
         face_landmarks_list = face_recognition.face_landmarks(frame)
 
@@ -46,15 +45,14 @@ def saveFeatures(frame, name):
             for facial_feature in facial_features:
                 d.line(face_landmarks[facial_feature], width=5)
 
-            file_name = 'facerecognition/images/' + name + str(datetime.now().strftime('%d-%m-%Y %H_%M_%S')) + '.JPEG'
-            print(file_name, 'JPEG')
+            file_name = '/home/vftp/admin/facerecognition/images/' + name + str(datetime.now().strftime('%d-%m-%Y %H_%M_%S')) + '.JPEG'
             pil_image.save(file_name, 'JPEG')
 
 def main(camera):
     print('in face')
     # global variables
     global video_capture
-    global jeoffrey_face_encoding
+    global senior_face_encoding
     global face_locations
     global face_encodings
     global face_names
@@ -65,8 +63,8 @@ def main(camera):
     video_capture = camera
 
     # Load a sample picture and learn how to recognize it.
-    jeoffrey_image = face_recognition.load_image_file("facerecognition/jeoffrey.jpg")
-    jeoffrey_face_encoding = face_recognition.face_encodings(jeoffrey_image)[0]
+    senior_image = face_recognition.load_image_file("/home/vftp/admin/facerecognition/jeoffrey.jpg")
+    senior_face_encoding = face_recognition.face_encodings(senior_image)[0]
 
     # Initialize some variables
     face_locations = []
@@ -91,11 +89,11 @@ def main(camera):
             face_names = []
             for face_encoding in face_encodings:
                 # See if the face is a match for the known face(s)
-                match = face_recognition.compare_faces([jeoffrey_face_encoding], face_encoding)
+                match = face_recognition.compare_faces([senior_face_encoding], face_encoding)
                 name = "Unknown"
 
                 if match[0]:
-                    name = "Jeoffrey"
+                    name = "Senior"
 
                 face_names.append(name)
 
@@ -107,23 +105,23 @@ def main(camera):
 
 
         # Display the results
-        for (top, right, bottom, left), name in zip(face_locations, face_names):
+#       for (top, right, bottom, left), name in zip(face_locations, face_names):
             # Scale back up face locations since the frame we detected in was scaled to 1/4 size
-            top *= 4
-            right *= 4
-            bottom *= 4
-            left *= 4
+#          top *= 4
+#            right *= 4
+#            bottom *= 4
+#            left *= 4
 
             # Draw a box around the face
-            cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+#            cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
 
             # Draw a label with a name below the face
-            cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
-            font = cv2.FONT_HERSHEY_DUPLEX
-            cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+#            cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
+#            font = cv2.FONT_HERSHEY_DUPLEX
+#            cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
 
         # Display the resulting image
-        cv2.imshow('Video', frame)
+#        cv2.imshow('Video', frame)
 
         # Hit 'q' on the keyboard to quit!
         if cv2.waitKey(1) & 0xFF == ord('q'):

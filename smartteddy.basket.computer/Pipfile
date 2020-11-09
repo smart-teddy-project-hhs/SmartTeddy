@@ -28,9 +28,9 @@ matplotlib = "*"
 tensorflow = "*"
 Pillow="*"
 opencv-python = "*"
-serial = "*"
 pyserial="*"
 pipenv="*"
+serial = "*"
 
 [requires]
 python_version = "3.8"
