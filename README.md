@@ -4,7 +4,7 @@ The goal of the Smart Teddy is to make Seniors with Dementia (SwD) reside home l
 
 The Smart Teddy project has a (Smart) Teddy and basket which performing measurements on the QoL. Examples of the QoL-measurements are basic health indicators and sentimental analysis. Which will give a basic answer to the question: 'How did you feel last week?' Normally, this question would be asked by informal-caregiver/formal-caregiver, therefore, automating this question will reduce strain on the caregivers. Generally, the Smart Teddy and basket will try to give a feeling of home sustaining the Quality of Life for senior and caregiver.
 
-A summary of how to install the Smart Teddy project and guidance on how to launch the Smart Teddy Project can be found in the README. However, it is advised to read the 'Developers manual' from which can asked from the owners named in the chapter 'Contacts'.
+A summary of how to install the Smart Teddy project and guidance on how to launch the Smart Teddy Project can be found in the README. Additional information can be found in the Wiki on Github and the 'Developers manual' can be asked from the owners named in the chapter 'Contacts'.
 
 **Technical Description**
 
