@@ -1,65 +1,55 @@
 # Smart Teddy
 
-With the intention of the Smart Teddy we want to take away worries of caregivers for Seniors with Dementia (SwD). Examples of caregivers are family members or medical staff that provide care to the SwD. Because by monitoring the safety of a SwD, they can live home longer without residing in a care home. In order to monitor the person of age we provided a Smart Teddy and basket.
+The goal of the Smart Teddy is to make Seniors with Dementia (SwD) reside home longer by increasing their Quality of Life (QoL). In previous research, it is shown that residing Seniors have a higher QOL, compare to the seniors in a residential home. In that case, the Smart Teddy makes the senior with dementia live home longer by measuring its QoL.
 
-For monitoring the SwD microcontrollers were first choice of implementation, because the provide easy access to low-level motoring sensors. The Smart Teddy and basket both have a microcontoller to have two monitoring points for extra validity. The basket reads the microcontroller basket via a Personal Computer (PC)
+The Smart Teddy project has a (Smart) Teddy and basket which performing measurements on the QoL. Examples of the QoL-measurements are basic health indicators and sentimental analysis. Which will give a basic answer to the question: 'How did you feel last week?' Normally, this question would be asked by informal-caregiver/formal-caregiver, therefore, automating this question will reduce strain on the caregivers. Generally, the Smart Teddy and basket will try to give a feeling of home sustaining the Quality of Life for senior and caregiver.
 
-Additional information technologies and launching methods of the Smart Teddy project can be found in the README.
+A summary of how to install the Smart Teddy project and guidance on how to launch the Smart Teddy Project can be found in the README. However, it is advised to read the 'Developers manual' from which can asked from the owners named in the chapter 'Contacts'.
+
+**Technical Description**
+
+Smart Teddy is a Internet-of-Things (IoT) project which is an other name for a collection network-enabled devices, excluding traditional computers like laptops and servers. The Smart Teddy does not communicate with cloud services to increase security. However, code-quality can be increased by cloud services. 
 
 ## Installation
 
-Basket microcontoller - Check if all the sensors are attached on the correct pins of the grove shield. Connect the arduino uno to the computer with an USB-a to USB-b cable.
-Basket computer - Open a terminal, git clone, pip install requirements.txt, then django is launchable.
+The Smart Teddy Project consists of two devices with/without sub devices, below you can read the minimum requirements for these devices. First the Smart Teddy with a single microcontroller and second the basket with a computer and sub-microcontroller connected through USB.
+
+1. Add a power cable to the basket computer
+2. Turn on the basket computer
+3. Set up a python virtual environment (pipenv) on the basket computer
+4. Install the required programs for the basket computer through the Pipfile
+   Note: some programs cannot be installed in the pipenv
+5. Configure an user for the web-application
+6. Connect the microcontroller to the computer through USB with the uploaded file via the IDE
+7. Add the webcam to the computer via USB
+8. Power the Smart teddy by a on/off switch
+9. Pair the Smart Teddy with basket computer through wireless communication
 
 ## Launching methods
 
-Basket microcontoller - start up the arduino IDE and upload the file to the arduino.
-Basket computer - change directory to the basket folder and for development: `python manage.py runserver` or for production `python manage.py check --deploy`
-
-## Hardware and software libraries
-
-### Basket
-
-The hardware for the basket contains an *Arduino Uno* microcontroller reads sensors and the *Asus Mini PC PN-50* runs an Python application for sending sending messages and communicates data inside the SwD home.
-
-Sensors for the microcontroller light, gas, motion, speech, and camera.
-
-* Light Dependent Resistor (LDR) - Light sensor
-* Carbon Monoxide, Coal Gas, Liquified Gas meter (MQ9) - Gas sensor
-* Grove - Speech Recognizer
-* PIR - Motion sensor
-
-Software libraries used for the basket microcontoller.
-
-* millis - Setting time in milliseconds  
-
-Software of the following technologies are used for the basket computer.
-
-* [Django](https://www.djangoproject.com/) - Python web-framework for creating a Website or Application Programming Interface (API)
-
-* [Bleak](https://github.com/hbldh/bleak) - Bluetooth library for Generic Attribute Profile (GATT) communication]
-
-* [Vosk API](https://alphacephei.com/vosk/) - A lightweight successor on the open source [CMU-Sphinx](https://cmusphinx.github.io/) speech recognition project 
-
-* [Kaldi NL](https://github.com/opensource-spraakherkenning-nl/Kaldi_NL) - Open source medium weight (1,7 GB) speech recognition model from [Stichting Open Spraaktechnologie](https://openspraaktechnologie.org/download/) by teachers from the Universiteit Twente, Dutch Instituut voor Beeld en Geluid, and Radboud Universiteit Nijmegen. The download for the Vosk model can be found at [Kaldi Dutch model Vosk](https://alphacephei.com/vosk/models/vosk-model-nl-spraakherkenning-0.6.zip) from [Vosk models](https://alphacephei.com/vosk/models)
-
-* [VU-sentiment-lexicon](https://github.com/opener-project/VU-sentiment-lexicon) - [Dutch Lexicon](https://github.com/opener-project/VU-sentiment-lexicon/tree/master/VUSentimentLexicon/NL-lexicon) with values of sentiment combined with a word, which is a project from the Vrije Universtieit Amsterdam from the year 2016.
-
-* [Django-pytest](https://pytest-django.readthedocs.io/) - A test framework based on [Pytest](https://docs.pytest.org/) a Python test framework supports easiness. Besides it has a plugin for our favorite IDE Pycharm.
+1. Turn on the basket computer
+2. Make sure that the microcontrollers and webcam are connected properly
+3. Login with the accepted credentials on the computer
+4. change directory to smartteddy.bakset.computer and pipenv shell
+5. `python3 web/smartteddydashboard/manage.py runserver` to run a development server
+6. Open a new terminal to the smartteddy.bakset.computer directory and pipenv shell
+7. `python3 service/start.py` to run all services
+8. New terminal is required on smartteddy.bakset.computer this time without pipenv
+9. `python3 service/speechrecognition/main.py` to run speech recognition
 
 ## Contributing 
 
-Please read [CONTIBUTING.md](https://github.com/hwpvanholsteijn/Smartteddy/blob/master/CONTRIBUTING.md) in the root of the repository and contribute by adding your own services.
+Please read [CONTIBUTING.md](https://github.com/smart-teddy-project-hhs/SmartTeddy/blob/master/CONTRIBUTING.md) in the root of the repository and contribute by adding your own services.
 
-For additional support look in the wiki's on github and additional architectural documentation can asked from the contibutors in the section contact. 
+For additional support, ask for 'Developers Manual' of the owners in the chapter Contacts for the additional architectural documentation. 
 
 ### Code of Conduct
 
-When contributing to the Smart Teddy project the rules for the [CODE_OF_CONDUCT.md](https://github.com/hwpvanholsteijn/Smartteddy/blob/master/CODE_OF_CONDUCT.md) apply. These are social rules in order to manage the contribution of the project.
+When contributing to the Smart Teddy project the rules for the [CODE_OF_CONDUCT.md](https://github.com/smart-teddy-project-hhs/SmartTeddy/blob/master/CODE_OF_CONDUCT.md) apply. These are social rules in order to manage the contribution of the project.
 
 ## Contact 
 
-Please feel free to send an e-mail in case of the Smart Teddy project, when documentation is insufficient.
+Please feel free to send an e-mail in case of the Smart Teddy project, when documentation is insufficient or for extra guidance.
 
 [Huub van Holsteijn](mailto:h.w.p.vanholsteijn@student.hhs.nl]) - hwpvanholsteijn
 
@@ -71,5 +61,5 @@ Please feel free to send an e-mail in case of the Smart Teddy project, when docu
 
 Smart Teddy uses the [MIT License](https://mit-license.org/) which means that authors or copyright holders in no event shall be liable for any claim, damages or other liability, whether in an action of contract. **However in MIT means that a NOTICE of the copyright owners is required.**
 
-_Besides this we like to ask you to fork the project in case of reuse, so that we can see future progress on our project._ 😉
+_Besides this we like to ask you to fork the project in case of reuse, so that we can see future progress on our project._ 
  
