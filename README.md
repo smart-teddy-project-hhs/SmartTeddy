@@ -1,26 +1,26 @@
 # Smart Teddy
 
-The goal of the Smart Teddy is to make Seniors with Dementia (SwD) reside home longer by increasing their Quality of Life (QoL). In previous research it is show that residing Seniors have a higher QOL, compare to the seniors in a residential home. In that case the Smart Teddy makes the senior with dementia live home longer by measuring its QoL.
+The goal of the Smart Teddy is to make Seniors with Dementia (SwD) reside home longer by increasing their Quality of Life (QoL). In previous research, it is shown that residing Seniors have a higher QOL, compare to the seniors in a residential home. In that case, the Smart Teddy makes the senior with dementia live home longer by measuring its QoL.
 
-The Smart Teddy project has a (Smart) Teddy and basket which performing measurements on the QoL. Examples of the QoL-measurements are basic health indicators and sentimental analysis. Which will give a basic answer to the question: 'How did you feel last week?' Normally this question would be asked by informal-caregiver/formal-caregiver, therefore automating this question will reduce strain on the caregivers. Generally the Smart Teddy and basket will try to give a feeling of home sustaining the Quality of Life for senior and caregiver.
+The Smart Teddy project has a (Smart) Teddy and basket which performing measurements on the QoL. Examples of the QoL-measurements are basic health indicators and sentimental analysis. Which will give a basic answer to the question: 'How did you feel last week?' Normally, this question would be asked by informal-caregiver/formal-caregiver, therefore, automating this question will reduce strain on the caregivers. Generally, the Smart Teddy and basket will try to give a feeling of home sustaining the Quality of Life for senior and caregiver.
 
-Summery of how to install the Smart Teddy project and guidance on how to launch the Smart Teddy Project can be found in the README. However it is advised to read 'Developers manual' from which can asked from the owners named in the chapter 'Contacts'.
+A summary of how to install the Smart Teddy project and guidance on how to launch the Smart Teddy Project can be found in the README. However, it is advised to read the 'Developers manual' from which can asked from the owners named in the chapter 'Contacts'.
 
-## Technical Description
+**Technical Description**
 
-Smart Teddy is a Internet-of-Things (IoT) project which is an other name for a collection network-enabled devices, excluding traditional computers like laptops and servers. The Smart Teddy does not communicate with cloud services to increase security. However code-quality can be increased by cloud services. 
+Smart Teddy is a Internet-of-Things (IoT) project which is an other name for a collection network-enabled devices, excluding traditional computers like laptops and servers. The Smart Teddy does not communicate with cloud services to increase security. However, code-quality can be increased by cloud services. 
 
 ## Installation
 
 The Smart Teddy Project consists of two devices with/without sub devices, below you can read the minimum requirements for these devices. First the Smart Teddy with a single microcontroller and second the basket with a computer and sub-microcontroller connected through USB.
 
-1. Add a power cable to the basket computer.
+1. Add a power cable to the basket computer
 2. Turn on the basket computer
 3. Set up a python virtual environment (pipenv) on the basket computer
-4. Install the required programs for the basket computer through the Pipfile.
+4. Install the required programs for the basket computer through the Pipfile
    Note: some programs cannot be installed in the pipenv
 5. Configure an user for the web-application
-6. Connect the microcontroller the computer through USB with the uploaded file via the IDE
+6. Connect the microcontroller to the computer through USB with the uploaded file via the IDE
 7. Add the webcam to the computer via USB
 8. Power the Smart teddy by a on/off switch
 9. Pair the Smart Teddy with basket computer through wireless communication
@@ -28,11 +28,11 @@ The Smart Teddy Project consists of two devices with/without sub devices, below 
 ## Launching methods
 
 1. Turn on the basket computer
-2. Make sure that microcontrollers and webcam are connected properly
+2. Make sure that the microcontrollers and webcam are connected properly
 3. Login with the accepted credentials on the computer
 4. change directory to smartteddy.bakset.computer and pipenv shell
 5. `python3 web/smartteddydashboard/manage.py runserver` to run a development server
-6. Op a new terminal to the smartteddy.bakset.computer directory and pipenv shell
+6. Open a new terminal to the smartteddy.bakset.computer directory and pipenv shell
 7. `python3 service/start.py` to run all services
 8. New terminal is required on smartteddy.bakset.computer this time without pipenv
 9. `python3 service/speechrecognition/main.py` to run speech recognition
@@ -41,7 +41,7 @@ The Smart Teddy Project consists of two devices with/without sub devices, below 
 
 Please read [CONTIBUTING.md](https://github.com/smart-teddy-project-hhs/SmartTeddy/blob/master/CONTRIBUTING.md) in the root of the repository and contribute by adding your own services.
 
-For additional support ask for 'Developers Manual' of the owners in the chapter Contacts for the additional architectural documentation. 
+For additional support, ask for 'Developers Manual' of the owners in the chapter Contacts for the additional architectural documentation. 
 
 ### Code of Conduct
 
@@ -62,6 +62,4 @@ Please feel free to send an e-mail in case of the Smart Teddy project, when docu
 Smart Teddy uses the [MIT License](https://mit-license.org/) which means that authors or copyright holders in no event shall be liable for any claim, damages or other liability, whether in an action of contract. **However in MIT means that a NOTICE of the copyright owners is required.**
 
 _Besides this we like to ask you to fork the project in case of reuse, so that we can see future progress on our project._ 
-
-Smart Teddy is a project developed by [The Hague University of Applied Sciences](https://www.thehagueuniversity.com/) (HHS) collocation in Zoetermeer the Netherlands.
  
