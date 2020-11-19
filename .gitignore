@@ -144,3 +144,4 @@ smartteddy.basket.computer/.idea/
 Pipfile.lock
 
 smartteddy.basket.computer/service/direct_message/.env
+*.DS_Store
